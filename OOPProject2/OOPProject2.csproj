@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA8C1623-B634-4DDB-A509-97A81D2FCDCA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OOPProject2</RootNamespace>
+    <AssemblyName>OOPProject2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add Forms\AddMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Forms\AddMember.Designer.cs">
+      <DependentUpon>AddMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Forms\AddexercisePlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Forms\AddexercisePlan.Designer.cs">
+      <DependentUpon>AddexercisePlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Forms\AddTrainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Forms\AddTrainer.Designer.cs">
+      <DependentUpon>AddTrainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddBonus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBonus.Designer.cs">
+      <DependentUpon>AddBonus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit and Delete Forms\DeleteTrainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit and Delete Forms\DeleteTrainer.Designer.cs">
+      <DependentUpon>DeleteTrainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Forms\AddEquipmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Forms\AddEquipmentForm.Designer.cs">
+      <DependentUpon>AddEquipmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other Forms\ManagersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other Forms\ManagersForm.Designer.cs">
+      <DependentUpon>ManagersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Forms\AddHall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Forms\AddHall.Designer.cs">
+      <DependentUpon>AddHall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other Forms\TrainersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other Forms\TrainersForm.Designer.cs">
+      <DependentUpon>TrainersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other Forms\WelcomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other Forms\WelcomeForm.Designer.cs">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GymHalls.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Edit and Delete Forms\EditMemberForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit and Delete Forms\EditMemberForm.Designer.cs">
+      <DependentUpon>EditMemberForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveExercisePlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveExercisePlan.designer.cs">
+      <DependentUpon>RemoveExercisePlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveGymHalls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveGymHalls.designer.cs">
+      <DependentUpon>RemoveGymHalls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveMember.designer.cs">
+      <DependentUpon>RemoveMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Forms\ViewAllTrainers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Forms\ViewMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Forms\ViewMember.Designer.cs">
+      <DependentUpon>ViewMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Forms\ViewTrainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Forms\ViewTrainer.Designer.cs">
+      <DependentUpon>ViewTrainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewGymHalls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewGymHalls.designer.cs">
+      <DependentUpon>ViewGymHalls.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add Forms\AddMember.resx">
+      <DependentUpon>AddMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Forms\AddexercisePlan.resx">
+      <DependentUpon>AddexercisePlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Forms\AddTrainer.resx">
+      <DependentUpon>AddTrainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddBonus.resx">
+      <DependentUpon>AddBonus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit and Delete Forms\DeleteTrainer.resx">
+      <DependentUpon>DeleteTrainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Forms\AddEquipmentForm.resx">
+      <DependentUpon>AddEquipmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other Forms\ManagersForm.resx">
+      <DependentUpon>ManagersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Forms\AddHall.resx">
+      <DependentUpon>AddHall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other Forms\TrainersForm.resx">
+      <DependentUpon>TrainersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other Forms\WelcomeForm.resx">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Edit and Delete Forms\EditMemberForm.resx">
+      <DependentUpon>EditMemberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveExercisePlan.resx">
+      <DependentUpon>RemoveExercisePlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveGymHalls.resx">
+      <DependentUpon>RemoveGymHalls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveMember.resx">
+      <DependentUpon>RemoveMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Forms\ViewAllTrainers.resx">
+      <DependentUpon>ViewAllTrainers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Forms\ViewMember.resx">
+      <DependentUpon>ViewMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Forms\ViewTrainer.resx">
+      <DependentUpon>ViewTrainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewGymHalls.resx">
+      <DependentUpon>ViewGymHalls.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GYM-Russia-Sibera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fcis_background.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trainer1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
